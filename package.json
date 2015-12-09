@@ -1,0 +1,32 @@
+{
+  "name": "alt-async",
+  "version": "1.0.0",
+  "description": "Next gen Data Sources",
+  "main": "lib/index.js",
+  "dependencies": {
+    "create-actions": "2.0.0",
+    "is-promise": "2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.2.0",
+    "babel-eslint": "4.1.6",
+    "babel-preset-airbnb": "1.0.0",
+    "babel-preset-stage-0": "6.1.18",
+    "eslint": "1.10.1",
+    "eslint-config-airbnb": "1.0.0",
+    "eslint-plugin-react": "3.10.0"
+  },
+  "files": [
+    "README.md",
+    "lib",
+    "src",
+    "test"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib --presets airbnb,stage-0",
+    "lint": "eslint src",
+    "test": "babel-node test/index.js"
+  },
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "MIT"
+}
